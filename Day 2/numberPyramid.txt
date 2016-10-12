@@ -1,0 +1,13 @@
+int number
+
+number = 1
+
+for (number <= number) {
+	if (number <= number){
+		print number
+	}else{
+		number++
+		println ""
+	}	
+
+}

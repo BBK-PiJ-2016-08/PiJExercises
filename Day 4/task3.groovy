@@ -11,7 +11,11 @@ myPower.exponent = 4
 void calculate(int b, int e){
 	int result
 	
-	result = Math.pow(b, e)
+	for(int i = 1; i <= e; i++){
+		result *= b
+	}
+	
+	//result = Math.pow(b, e)
 	
 	println "result = " + result
 }

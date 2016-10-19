@@ -15,6 +15,15 @@ class ArrayCopier{
 		int[] src = {1,2,3,4};
 		int[] dst = new int[4];
 		
+		if(src.length > dst.length){
+			
+			
+		}else if(dst.length > src.length){
+			
+			
+			
+		}
+		
 		int[] result = new int[4];
 		result = copy(src, dst);
 		

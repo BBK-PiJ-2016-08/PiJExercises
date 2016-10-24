@@ -3,12 +3,12 @@ public class PersonQueueList implements PersonQueue{
 
 	public void insert(Person person){
 						
-		Person newPerson = new Person(person);
+		Person newPerson = person;
 		if (q == null){
 			q = newPerson;
 			return;
 		} else {
-			Person current = personListStart;
+			Person current = q;
 			while(current.getNext() != null) {
 				current = current.getNext();
 				}

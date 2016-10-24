@@ -30,7 +30,7 @@ public class Supermarket{
 				return null;	
 			}else{
 				
-				return q.retreive();
+				return q.retrieve();
 
 			}
 		

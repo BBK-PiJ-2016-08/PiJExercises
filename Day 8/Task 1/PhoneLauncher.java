@@ -7,14 +7,15 @@ public class PhoneLauncher {
 		
 		
 	}
+
 	public void launch() {
 	// your code creating and using SmartPhone here...
 		System.out.println("Welcome to your mobile phone");
-		OldPhone oldPhone = new OldPhone();
+		//OldPhone oldPhone = new OldPhone();
 		SmartPhone smartPhone = new SmartPhone();
 		MobilePhone mobilePhone = new MobilePhone();
 		
-		oldPhone.call("0568948749");
+		smartPhone.call("0568948749");
 		
 		System.out.println(smartPhone.findPosition());
 		
@@ -47,6 +48,10 @@ public class PhoneLauncher {
 		System.out.println("Stored numbers are...");
 		
 		smartPhone.printLastNumber();
+		
+		//String brand = smartPhone.getBrand();
+		
+		//System.out.println("Brand is = " + brand);
 		
 		
 		

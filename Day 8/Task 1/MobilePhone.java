@@ -4,7 +4,6 @@ public class MobilePhone extends OldPhone {
 		private static int storedNumber = 1;
 
 
-
 		public void ringAlarm(String string){
 		
 			System.out.println("Ringing alarm = " + string);
@@ -16,6 +15,7 @@ public class MobilePhone extends OldPhone {
 			System.out.println("Playing game = " + string);
 		
 		}
+
 		
 		public void printLastNumber(){
 			

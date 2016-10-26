@@ -1,6 +1,6 @@
 public class SmartPhone extends MobilePhone {
 	
-	public int[] internationalNumbers = {44,66,99,24,56};
+	public int[] internationalNumbers = {00,44,66,99,24,56};
 
 		public void browseWeb(String string){
 		
@@ -8,6 +8,7 @@ public class SmartPhone extends MobilePhone {
 		
 		
 		}
+		
 		
 		public String findPosition(){
 			double longitude = 32.589933;

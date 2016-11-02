@@ -1,6 +1,5 @@
 public class Factorial {
 
-    private static int resultIte;
 
     public static void main(String[] args){
 

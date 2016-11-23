@@ -26,10 +26,8 @@ public class TaskFour{
 
     public void copy(File toCopy, File toBeCopied) throws IOException {
         //File file = new File("file.csv");
-        BufferedReader in = null;
-        PrintWriter out = null;
-        try (in = new BufferedReader(new FileReader(toCopy))) {
-            out = new PrintWriter(toBeCopied);
+        try (BufferedReader in = new BufferedReader(new FileReader(toCopy))) {
+            PrintWriter out = new PrintWriter(toBeCopied);
             String line;
             while ((line = in.readLine()) != null) {
                 out.write(line);
@@ -38,19 +36,12 @@ public class TaskFour{
                 // ... do things with the data here
             }
 
-
+            out.close();
 
         } catch (FileNotFoundException ex) {
             System.out.println("File " + toCopy + " does not exist.");
         } catch (IOException ex) {
             ex.printStackTrace();
-        } finally {
-            try {}
-                in.close();
-            } catch (IOException ex){
-                ex.printStackTrace();
-            }
-            out.close();
         }
 
     }

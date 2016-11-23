@@ -26,8 +26,9 @@ public class TaskFour{
 
     public void copy(File toCopy, File toBeCopied) throws IOException {
         //File file = new File("file.csv");
+        BufferedReader in = null;
         PrintWriter out = null;
-        try (BufferedReader in = new BufferedReader(new FileReader(toCopy))) {
+        try (in = new BufferedReader(new FileReader(toCopy))) {
             out = new PrintWriter(toBeCopied);
             String line;
             while ((line = in.readLine()) != null) {
@@ -44,6 +45,11 @@ public class TaskFour{
         } catch (IOException ex) {
             ex.printStackTrace();
         } finally {
+            try {}
+                in.close();
+            } catch (IOException ex){
+                ex.printStackTrace();
+            }
             out.close();
         }
 

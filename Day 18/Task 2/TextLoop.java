@@ -1,7 +1,7 @@
 import java.util.concurrent.*;
 
 public class TextLoop implements Runnable, Executor {
-    public static final int COUNT = 10;
+    public static final int COUNT = 100;
     private final String name;
     public TextLoop(String name) {
         this.name = name;
@@ -30,7 +30,7 @@ public class TextLoop implements Runnable, Executor {
                 r.run();
             }
         } else {
-            for (int i = 0; i < 10; i++) {
+            for (int i = 0; i < 1000; i++) {
                 Runnable r = new TextLoop("Thread " + i);
                 ThreadFactory threadFactory = Executors.defaultThreadFactory();
                 ExecutorService executorService = Executors.newFixedThreadPool(100);

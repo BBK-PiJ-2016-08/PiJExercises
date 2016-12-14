@@ -1,0 +1,7 @@
+Hello this is a test
+To see whether 
+I can
+Access files over a 
+Network application
+
+Macintosh HD/Users/jakeholdom/Programming/Java/PiJExercises/Day 22/src/taskfour/text.txt
